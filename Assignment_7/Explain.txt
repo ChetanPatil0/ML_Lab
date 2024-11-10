@@ -1,0 +1,39 @@
+
+Here’s a summary of the provided code:
+
+Library Imports:
+
+pandas for handling data (loading and manipulating).
+KMeans from sklearn.cluster to apply K-Means clustering.
+matplotlib.pyplot for plotting the data and clusters.
+Loading the Dataset:
+
+The dataset is loaded from a CSV file named customer_spending_data.csv using pd.read_csv().
+Feature Extraction:
+
+The relevant columns used for clustering are "Spending on Food" and "Spending on Clothing", which are stored in X.
+K-Means Clustering:
+
+The K-Means algorithm is initialized with 3 clusters (n_clusters=3).
+The model is fitted to the data using kmeans.fit(X).
+Cluster labels (which cluster each customer belongs to) are predicted using kmeans.predict(X) and added as a new column, New Cluster, to the dataset.
+Plotting the Clusters:
+
+A scatter plot visualizes the clusters based on customer spending on food and clothing.
+Cluster centroids are highlighted as red "X" markers on the plot.
+Cluster Centers (Centroids):
+
+The coordinates of the centroids (centers of each cluster) are printed in a table.
+Customer Distribution Across Clusters:
+
+The number of customers in each cluster is displayed to understand the distribution of customers across the 3 clusters.
+Display Dataset with New Clusters:
+
+The entire dataset is printed with the new New Cluster labels showing the spending data along with the assigned cluster for each customer.
+This code provides an implementation of K-Means clustering to analyze customer spending patterns and visually explore the segmentation into clusters.
+
+
+
+
+
+
